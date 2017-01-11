@@ -1,0 +1,35 @@
+data:
+
+1,2,3,4,5, 5 dup(10), "aabb", heh: 1, duh: buh: 3,
+
+enddata
+
+code:
+
+mov r1, 10
+ld r2, 4
+mov r3, r1
+heheszki:
+add r3, r3, 4
+cmp r3, 22
+jle heheszki
+
+st 100, r2
+ld r12, 100
+
+add r3,r1,r2
+sub	r4,r1,r2
+
+or	r5,r1,r2
+and	r6,r1,r2
+xor	r7,r1,r2
+not	r8,r1
+neg	r9,r1
+
+shl	r10,r1,1
+shr	r11,r1,1
+
+heh:
+jmp heh
+
+endcode
